@@ -1,4 +1,3 @@
-import React from "react";
 import PeopleCard from "./PeopleCard";
 import data from "../utils/data";
 
@@ -7,12 +6,9 @@ const PeopleList = () => {
 
   return (
     <div>
-      <h3>People List</h3>
       {data.map((item, id) => (
         <PeopleCard key={id} data={item} />
       ))}
-
-      <button className="btn btn-danger">View all</button>
     </div>
   );
 };
